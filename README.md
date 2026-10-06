@@ -1,70 +1,39 @@
-Amazon Products Analytics Dashboard
+# 📊 Amazon Products Analytics Power BI Dashboard
 
-An interactive Amazon Products Analytics Dashboard built using Microsoft Power BI as part of my Data Analytics training under the Digital Egypt Pioneers Initiative (DEPI).
+An executive-level, interactive two-page Power BI dashboard designed to analyze e-commerce product performance, pricing dynamics, discount strategies, and customer satisfaction metrics[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span).
 
-🎯 Project Objective
+---
 
-The objective of this project was to transform raw e-commerce product data into an interactive dashboard that provides insights into:
+## 🛠️ Key Features & Interactivity
+- **Executive Overview (Page 1):** Highlights key KPIs (Catalog Count, Total Engagement, Average Rating, Discount %, Pricing) alongside rating distributions, satisfaction hierarchies, and discount band counts[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span).
+- **Details & Deep-Dive Analysis (Page 2):** Tabular analysis of product-level metrics, customer engagement, satisfaction scores, and revenue generation[span_4](start_span)[span_4](end_span).
+- **Interactive UI & Filtering:** Modern dark-themed layout with synchronized slicers for Category and Sub-Category across all visuals[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span).
+- **Insight Cards:** Dedicated textual cards providing instant executive insights and analytical notes[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span).
 
-- Product catalog distribution
-- Customer ratings and engagement
-- Pricing and discount patterns
-- Product and category performance
+---
 
-🛠️ Tools & Technologies
+## 📐 Data Modeling & DAX Measures
+- **Data Model:** Structured star schema built in Power Query with cleaned e-commerce attributes, category hierarchies, and pricing dimensions[span_9](start_span)[span_9](end_span).
+- **DAX Calculations:** Custom measures implemented to ensure accurate row-level evaluation context (e.g., dynamic average ratings) and prevent rate-aggregation distortions across categories[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span).
+  - `Average Rating`
+  - `Total Engagement`
+  - `Average Discount %`
+  - `Total Revenue`
 
-- Microsoft Power BI
-- Power Query — Data Cleaning & Transformation
-- DAX — Calculations & Measures
-- Data Visualization
-- Data Analysis
+---
 
-📂 Dataset
+## 📂 Repository Contents
+- **`Dashboard/`**: Contains the full `.pbix` Power BI interactive report file[span_12](start_span)[span_12](end_span).
+- **`Dataset/`**: Contains the raw CSV data source used for transformation and modeling[span_13](start_span)[span_13](end_span).
+- **`Images/`**: High-resolution screenshots of the dashboard pages[span_14](start_span)[span_14](end_span).
 
-The project uses an Amazon products dataset containing information related to products, categories, pricing, discounts, ratings, reviews, and other product attributes.
+---
 
-The dataset used for the analysis is included in the "Dataset" folder.
+## 📸 Previews
 
-📊 Key Analytical Areas
+### Page 1: Home
+![Home Page Overview](home.png)
 
-1. Satisfaction & Engagement Analysis
+### Page 2: Details
+![Details Page Preview](details.png)
 
-Analyzed average product ratings across different categories and sub-categories to understand customer satisfaction patterns.
-
-2. Pricing & Discount Analysis
-
-Analyzed actual prices, selling prices, and discount percentages to identify pricing and promotional patterns.
-
-3. Category & Product Performance
-
-Compared product categories and individual products based on customer engagement and revenue-related metrics.
-
-💡 Key Insights
-
-- The overall average customer rating was 4.1/5, with Office Products and Home Improvement among the highest-rated categories at 4.3/5.
-- More than 660 products were included in the 50%+ discount band, highlighting the significant role of promotional pricing in the dataset.
-- In-Ear Headphones recorded customer engagement exceeding 237 million, with revenue reaching approximately $9.2M.
-- The overall average discount across the analyzed products was 46.7%, indicating a strong reliance on promotional pricing.
-
-🖼️ Dashboard Preview
-
-"Dashboard Overview" (Images/dashboard-overview.png)
-
-📁 Project Structure
-
-Amazon-Products-Analytics/
-│
-├── README.md
-│
-├── Dataset/
-│   └── amazon_products.csv
-│
-├── Dashboard/
-│   └── Amazon_Dashboard.pdf
-│
-└── Images/
-    └── dashboard-overview.png
-
-📌 Project Purpose
-
-This project was developed for learning and portfolio purposes, with a focus on practicing data cleaning, transformation, visualization, dashboard development, and extracting insights from e-commerce data.
